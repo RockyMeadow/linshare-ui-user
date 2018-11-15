@@ -616,6 +616,16 @@
                               </document-preview-button>
                             </li>
                             <li
+                              data-ng-if="workgroupNodesVm.edtitorEnabled &&
+                                workgroupNodesVm.permissions.FILE.CREATE &&
+                                nodeItem.type === workgroupNodesVm.TYPE_DOCUMENT"
+                            >
+                              <document-edit-button
+                                item="nodeItem"
+                                editor-base-url="workgroupNodesVm.editorBaseUrl"
+                              ></document-edit-button>
+                            </li>
+                            <li
                               data-ng-class="{
                               'disable-link' :
                               !(nodeItem.type === workgroupNodesVm.TYPE_DOCUMENT &&

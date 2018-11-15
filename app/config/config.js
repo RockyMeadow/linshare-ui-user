@@ -40,5 +40,8 @@
           'vi-VN': 'Tên'
         }
       },
+    })
+    .constant('lsEditorConfig', {
+      editableExtensions: ['DOC', 'DOCX', 'ODT', 'RTF', 'TXT']
     });
 })();

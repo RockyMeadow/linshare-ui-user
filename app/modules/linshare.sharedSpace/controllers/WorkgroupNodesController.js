@@ -145,6 +145,9 @@
         .then(function(functionalities) {
           workgroupNodesVm.functionalities.contactsList = functionalities.CONTACTS_LIST__CREATION_RIGHT;
           workgroupNodesVm.canCopyNodeToPersonalSpace = functionalities.INTERNAL_CAN_UPLOAD.enable;
+          // TODO: update this after functionalities are supported
+          workgroupNodesVm.edtitorEnabled = true;
+          workgroupNodesVm.editorBaseUrl = 'http://localhost:8080';
         });
 
       Object.assign(
